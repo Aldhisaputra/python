@@ -1,4 +1,3 @@
-# Mengimpor library yang diperlukan
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -15,10 +14,10 @@ def gbr_garis_dda(imageDataTemp, x1, y1, x2, y2, r, g, b):
     dx = x2 - x1
     dy = y2 - y1
     
-    # Menentukan jumlah langkah
+    # Menentukan jumlah langkah yang diperlukan untuk menggambar garis
     steps = max(abs(dx), abs(dy))
     
-    # Menghitung perubahan per langkah
+    # Menghitung perubahan koordinat per langkah
     x_inc = dx / float(steps)
     y_inc = dy / float(steps)
     
